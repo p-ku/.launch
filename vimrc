@@ -1,3 +1,11 @@
+" LICENSE INFO
+" Licensed under Attribution-NonCommercial-ShareAlike 4.0 International CC BY-NC-SA 4.0.
+" https://creativecommons.org/licenses/by-nc-sa/4.0/
+" Copied from MIT Missing Semester course 
+" https://missing.csail.mit.edu
+" https://github.com/missing-semester/missing-semester/blob/master/_2020/files/vimrc
+" No changes have been made as of 17 August 2020.
+
 " Comments in Vimscript start with a `"`.
 
 " If you open this file in Vim, it'll be syntax highlighted for you.
