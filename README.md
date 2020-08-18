@@ -3,7 +3,6 @@
 Various configs, scripts, dotfiles, and whatnot, etc.
 
 ## How I use it
-------------
 Clone this repository:
 ```bash
 cd ~
