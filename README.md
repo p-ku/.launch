@@ -2,10 +2,14 @@
 
 Various configs, scripts, dotfiles, and whatnot, etc.
 
-How I use it
+## How I use it
 ------------
 Clone this repository:
-  cd ~
-  git clone https://github.com/p-ku/dotfiles.git
+```bash
+cd ~
+git clone https://github.com/p-ku/dotfiles.git
+```
 Run the initiation script:
-  ./init.sh
+```bash
+./init.sh
+```
