@@ -10,5 +10,5 @@ git clone https://github.com/p-ku/dotfiles.git
 ```
 Run the initiation script:
 ```bash
-./init.sh
+dotfiles/init.sh
 ```
