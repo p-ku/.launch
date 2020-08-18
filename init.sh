@@ -1,6 +1,6 @@
 #!/bin/bash
 apt full-upgrade
-apt install git vim
+apt install git vim tmux
 # Copied from https://missing.csail.mit.edu/2020/editors/
 # "Many programs use the GNU Readline library for their command-line interface."
 # "Readline supports (basic) Vim emulation too, which can be enabled by adding the following line to the ~/.inputrc file:"
