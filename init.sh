@@ -1,6 +1,9 @@
 #!/bin/bash
-apt full-upgrade
-apt install git vim tmux
+apt -y full-upgrade
+apt -y install git vim tmux
+
+ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.tmux.config ~/.tmux.config
 
 # Copied from https://missing.csail.mit.edu/2020/editors/
 # "Many programs use the GNU Readline library for their command-line interface."
