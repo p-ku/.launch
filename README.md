@@ -1,3 +1,3 @@
 # miscellany
 
-Various configs, scripts, and whatnot.
+Various configs, scripts, dotfiles, and whatnot, etc.
