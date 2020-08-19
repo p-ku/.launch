@@ -14,5 +14,9 @@ chmod u+x dotfiles/init.sh
 ```
 Run the initiation script:
 ```bash
-bash dotfiles/init.sh
+sudo bash dotfiles/init.sh
+```
+Change default shell to zsh:
+```bash
+chsh -s $(which zsh)
 ```
