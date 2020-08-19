@@ -19,7 +19,7 @@ git clone https://github.com/easymotion/vim-easymotion
 
 cd /home/$SUDO_USER
 
-git clone --recursive https://github.com/sorin-ionescu/prezto.git
+git clone --recursive https://github.com/sorin-ionescu/prezto.git ./.zprezto
 
 DOTNAME=$(ls /home/$SUDO_USER/dotfiles/dots)
 for dotfile in $DOTNAME; do
