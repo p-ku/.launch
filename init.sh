@@ -21,7 +21,7 @@ sudo -u $real_user git clone https://github.com/easymotion/vim-easymotion
 
 sudo -u $real_user zsh
 
-sudo -u $real_user git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+sudo -u $real_user git clone --recursive https://github.com/sorin-ionescu/prezto.git /home/$real_user
 
 sudo -u $real_user ln -s /home/$real_user/dotfiles/vimrc /home/$real_user/.vimrc
 sudo -u $real_user ln -s /home/$real_user/dotfiles/tmux.config /home/$real_user/.tmux.config
