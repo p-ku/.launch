@@ -32,4 +32,4 @@ apt -y install vim tmux zsh
 
 sudo -u $real_user chsh -s $(which zsh)
 
-sudo -u $real_user zsh
+su -c zsh - $real_user
