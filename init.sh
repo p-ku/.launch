@@ -3,7 +3,7 @@
 real_user=$SUDO_USER
 
 apt -y full-upgrade
-apt -y install git vim tmux zsh
+apt -y install vim tmux zsh
 
 # Copied from https://missing.csail.mit.edu/2020/editors/
 # "Many programs use the GNU Readline library for their command-line interface."
