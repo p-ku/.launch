@@ -12,18 +12,16 @@ echo "set editing-mode vi" >> /home/$real_user/.inputrc
 
 # Add some basic Vim plugins, recommended by the MIT missing semester class
 mkdir -p ~/.vim/pack/vendor/start
-cd  /home/$real_user/.vim/pack/vendor/start
-sudo -u $real_user git clone https://github.com/ctrlpvim/ctrlp.vim
-sudo -u $real_user git clone https://github.com/mileszs/ack.vim
-sudo -u $real_user git clone https://github.com/scrooloose/nerdtree
-sudo -u $real_user git clone https://github.com/easymotion/vim-easymotion
+
+sudo -u $real_user git clone https://github.com/ctrlpvim/ctrlp.vim /home/$real_user/.vim/pack/vendor/start
+sudo -u $real_user git clone https://github.com/mileszs/ack.vim /home/$real_user/.vim/pack/vendor/start
+sudo -u $real_user git clone https://github.com/scrooloose/nerdtree /home/$real_user/.vim/pack/vendor/start
+sudo -u $real_user git clone https://github.com/easymotion/vim-easymotion /home/$real_user/.vim/pack/vendor/start
 # With this setting, for example, the Python REPL will support Vim bindings.
 
 sudo -u $real_user zsh
 
-cd /home/$real_user
-
-sudo -u $real_user git clone --recursive https://github.com/sorin-ionescu/prezto.git
+sudo -u $real_user git clone --recursive https://github.com/sorin-ionescu/prezto.git /home/$real_user
 
 ln -s /home/$real_user/dotfiles/vimrc /home/$real_user/.vimrc
 ln -s /home/$real_user/dotfiles/tmux.config /home/$real_user/.tmux.config
