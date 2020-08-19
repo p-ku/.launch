@@ -21,7 +21,7 @@ cd /home/$SUDO_USER
 
 git clone --recursive https://github.com/sorin-ionescu/prezto.git
 
-DOTNAME=$(ls /home/$SUDO_USER/dotfile/dots)
+DOTNAME=$(ls /home/$SUDO_USER/dotfiles/dots)
 for dotfile in $DOTNAME; do
   ln -sf /home/$SUDO_USER/dotfiles/dots/$dotfile /home/$SUDO_USER/."$dotfile"
 done
