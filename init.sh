@@ -19,10 +19,11 @@ git clone https://github.com/easymotion/vim-easymotion
 # With this setting, for example, the Python REPL will support Vim bindings.
 
 zsh
+
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.tmux.config ~/.tmux.config
 ln -s ~/dotfiles/.zpreztorc ~/.zpreztorc
-chsh -s /bin/zsh
 
+chsh -s $(which zsh)
