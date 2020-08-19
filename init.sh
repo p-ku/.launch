@@ -23,8 +23,6 @@ sudo -u $real_user git clone https://github.com/easymotion/vim-easymotion
 
 cd /home/$real_user/
 
-sudo -u $real_user zsh
-
 sudo -u $real_user git clone --recursive https://github.com/sorin-ionescu/prezto.git /home/$real_user
 
 ln -s /home/$real_user/dotfiles/vimrc /home/$real_user/.vimrc
@@ -35,3 +33,5 @@ ln -s /home/$real_user/dotfiles/zdot/zshrc /home/$real_user/.zshrc
 ln -s /home/$real_user/dotfiles/zdot/zlogin /home/$real_user/.zlogin
 ln -s /home/$real_user/dotfiles/zdot/zlogout /home/$real_user/.zlogout
 ln -s /home/$real_user/dotfiles/zdot/zpreztorc /home/$real_user/.zpreztorc
+
+sudo -u $real_user zsh
