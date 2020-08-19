@@ -11,7 +11,7 @@ apt -y install git vim tmux zsh
 echo "set editing-mode vi" >> ~/.inputrc
 
 # Add some basic Vim plugins, recommended by the MIT missing semester class
-sudo -u $real_user mkdir -p ~/.vim/pack/vendor/start
+mkdir -p ~/.vim/pack/vendor/start
 sudo -u $real_user cd ~/.vim/pack/vendor/start
 sudo -u $real_user git clone https://github.com/ctrlpvim/ctrlp.vim
 sudo -u $real_user git clone https://github.com/mileszs/ack.vim
