@@ -22,8 +22,11 @@ zsh
 
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
-ln -s ~/dotfiles/.vimrc ~/.vimrc
-ln -s ~/dotfiles/.tmux.config ~/.tmux.config
-ln -s ~/dotfiles/.zpreztorc ~/.zpreztorc
-
-chsh -s $(which zsh)
+ln -s ~/dotfiles/vimrc ~/.vimrc
+ln -s ~/dotfiles/tmux.config ~/.tmux.config
+ln -s ~/dotfiles/zdot/zshenv ~/.zshenv
+ln -s ~/dotfiles/zdot/zprofile ~/.zprofile
+ln -s ~/dotfiles/zdot/zshrc ~/.zshrc
+ln -s ~/dotfiles/zdot/zlogin ~/.zlogin
+ln -s ~/dotfiles/zdot/zlogout ~/.zlogout
+ln -s ~/dotfiles/zdot/zpreztorc ~/.zpreztorc
