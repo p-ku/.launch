@@ -1,9 +1,8 @@
 #!/bin/bash
 apt -y full-upgrade
-apt -y install git vim tmux
+apt -y install git vim tmux zsh
 
-ln -s ~/dotfiles/.vimrc ~/.vimrc
-ln -s ~/dotfiles/.tmux.config ~/.tmux.config
+
 
 # Copied from https://missing.csail.mit.edu/2020/editors/
 # "Many programs use the GNU Readline library for their command-line interface."
@@ -17,5 +16,13 @@ git clone https://github.com/ctrlpvim/ctrlp.vim
 git clone https://github.com/mileszs/ack.vim
 git clone https://github.com/scrooloose/nerdtree
 git clone https://github.com/easymotion/vim-easymotion
-
 # With this setting, for example, the Python REPL will support Vim bindings.
+
+zsh
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
+ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.tmux.config ~/.tmux.config
+ln -s ~/dotfiles/.zpreztorc ~/.zpreztorc
+chsh -s /bin/zsh
+
