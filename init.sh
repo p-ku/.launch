@@ -19,7 +19,7 @@ sudo -u $real_user git clone https://github.com/scrooloose/nerdtree
 sudo -u $real_user git clone https://github.com/easymotion/vim-easymotion
 # With this setting, for example, the Python REPL will support Vim bindings.
 
-sudo -u $real_user zsh
+zsh
 
 cd /home/$real_user
 
