@@ -19,17 +19,17 @@ sudo -u $real_user git clone https://github.com/scrooloose/nerdtree
 sudo -u $real_user git clone https://github.com/easymotion/vim-easymotion
 # With this setting, for example, the Python REPL will support Vim bindings.
 
-zsh
+sudo -u $real_user zsh
 
 cd /home/$real_user
 
 sudo -u $real_user git clone --recursive https://github.com/sorin-ionescu/prezto.git
 
-sudo -u $real_user ln -s /home/$real_user/dotfiles/vimrc /home/$real_user/.vimrc
-sudo -u $real_user ln -s /home/$real_user/dotfiles/tmux.config /home/$real_user/.tmux.config
-sudo -u $real_user ln -s /home/$real_user/dotfiles/zdot/zshenv /home/$real_user/.zshenv
-sudo -u $real_user ln -s /home/$real_user/dotfiles/zdot/zprofile /home/$real_user/.zprofile
-sudo -u $real_user ln -s /home/$real_user/dotfiles/zdot/zshrc /home/$real_user/.zshrc
-sudo -u $real_user ln -s /home/$real_user/dotfiles/zdot/zlogin /home/$real_user/.zlogin
-sudo -u $real_user ln -s /home/$real_user/dotfiles/zdot/zlogout /home/$real_user/.zlogout
-sudo -u $real_user ln -s /home/$real_user/dotfiles/zdot/zpreztorc /home/$real_user/.zpreztorccd ~
+ln -s /home/$real_user/dotfiles/vimrc /home/$real_user/.vimrc
+ln -s /home/$real_user/dotfiles/tmux.config /home/$real_user/.tmux.config
+ln -s /home/$real_user/dotfiles/zdot/zshenv /home/$real_user/.zshenv
+ln -s /home/$real_user/dotfiles/zdot/zprofile /home/$real_user/.zprofile
+ln -s /home/$real_user/dotfiles/zdot/zshrc /home/$real_user/.zshrc
+ln -s /home/$real_user/dotfiles/zdot/zlogin /home/$real_user/.zlogin
+ln -s /home/$real_user/dotfiles/zdot/zlogout /home/$real_user/.zlogout
+ln -s /home/$real_user/dotfiles/zdot/zpreztorc /home/$real_user/.zpreztorccd ~
