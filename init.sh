@@ -25,13 +25,8 @@ cd /home/$real_user/
 
 sudo -u $real_user git clone --recursive https://github.com/sorin-ionescu/prezto.git /home/$real_user
 
-ln -s /home/$real_user/dotfiles/vimrc /home/$real_user/.vimrc
-ln -s /home/$real_user/dotfiles/tmux.config /home/$real_user/.tmux.config
-ln -s /home/$real_user/dotfiles/zdot/zshenv /home/$real_user/.zshenv
-ln -s /home/$real_user/dotfiles/zdot/zprofile /home/$real_user/.zprofile
-ln -s /home/$real_user/dotfiles/zdot/zshrc /home/$real_user/.zshrc
-ln -s /home/$real_user/dotfiles/zdot/zlogin /home/$real_user/.zlogin
-ln -s /home/$real_user/dotfiles/zdot/zlogout /home/$real_user/.zlogout
-ln -s /home/$real_user/dotfiles/zdot/zpreztorc /home/$real_user/.zpreztorc
+for dotfile in ./dotfiles/dots; do
+  ln -s /home/$real_user/dotfiles/$dotfile /home/$real_user/."$dotfile"
+done
 
 sudo -u $real_user zsh
