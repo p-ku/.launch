@@ -32,4 +32,4 @@ sudo -u $real_user ln -s /home/$real_user/dotfiles/zdot/zprofile /home/$real_use
 sudo -u $real_user ln -s /home/$real_user/dotfiles/zdot/zshrc /home/$real_user/.zshrc
 sudo -u $real_user ln -s /home/$real_user/dotfiles/zdot/zlogin /home/$real_user/.zlogin
 sudo -u $real_user ln -s /home/$real_user/dotfiles/zdot/zlogout /home/$real_user/.zlogout
-sudo -u $real_user ln -s /home/$real_user/dotfiles/zdot/zpreztorc /home/$real_user/.zpreztorc
+sudo -u $real_user ln -s /home/$real_user/dotfiles/zdot/zpreztorc /home/$real_user/.zpreztorccd ~
