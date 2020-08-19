@@ -11,13 +11,17 @@ apt -y install git vim tmux zsh
 echo "set editing-mode vi" >> /home/$real_user/.inputrc
 
 # Add some basic Vim plugins, recommended by the MIT missing semester class
-mkdir -p ~/.vim/pack/vendor/start
+mkdir -p /home/$real_user/.vim/pack/vendor/start
 
-sudo -u $real_user git clone https://github.com/ctrlpvim/ctrlp.vim /home/$real_user/.vim/pack/vendor/start
-sudo -u $real_user git clone https://github.com/mileszs/ack.vim /home/$real_user/.vim/pack/vendor/start
-sudo -u $real_user git clone https://github.com/scrooloose/nerdtree /home/$real_user/.vim/pack/vendor/start
-sudo -u $real_user git clone https://github.com/easymotion/vim-easymotion /home/$real_user/.vim/pack/vendor/start
+cd /home/$real_user/.vim/pack/vendor/start
+
+sudo -u $real_user git clone https://github.com/ctrlpvim/ctrlp.vim
+sudo -u $real_user git clone https://github.com/mileszs/ack.vim
+sudo -u $real_user git clone https://github.com/scrooloose/nerdtree
+sudo -u $real_user git clone https://github.com/easymotion/vim-easymotion
 # With this setting, for example, the Python REPL will support Vim bindings.
+
+cd /home/$real_user/
 
 sudo -u $real_user zsh
 
