@@ -3,6 +3,10 @@
 Various configs, scripts, dotfiles, and whatnot, etc.
 
 ## How I use it
+Install git:
+```bash
+sudo apt install git
+```
 Clone this repository:
 ```bash
 cd ~
@@ -19,6 +23,7 @@ chsh -s $(which zsh)
 Log out for changes to take effect.
 All together now:
 ```bash
+sudo apt install git; \
 cd ~; \
 git clone --recursive https://github.com/p-ku/dotfiles.git; \
 sudo bash dotfiles/init.sh; \
