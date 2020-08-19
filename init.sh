@@ -29,7 +29,3 @@ for file in ./dotfiles/dots; do
 done
 
 apt -y install vim tmux zsh
-
-sudo -u $real_user chsh -s $(which zsh)
-
-su -c zsh - $real_user
