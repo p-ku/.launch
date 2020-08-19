@@ -32,4 +32,4 @@ ln -s /home/$real_user/dotfiles/zdot/zprofile /home/$real_user/.zprofile
 ln -s /home/$real_user/dotfiles/zdot/zshrc /home/$real_user/.zshrc
 ln -s /home/$real_user/dotfiles/zdot/zlogin /home/$real_user/.zlogin
 ln -s /home/$real_user/dotfiles/zdot/zlogout /home/$real_user/.zlogout
-ln -s /home/$real_user/dotfiles/zdot/zpreztorc /home/$real_user/.zpreztorccd ~
+ln -s /home/$real_user/dotfiles/zdot/zpreztorc /home/$real_user/.zpreztorc
