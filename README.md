@@ -10,7 +10,7 @@ git clone https://github.com/p-ku/dotfiles.git
 ```
 Update permissions:
 ```bash
-chmod u+x
+chmod u+x dotfiles/init.sh
 ```
 Run the initiation script:
 ```bash
