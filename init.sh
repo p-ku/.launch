@@ -23,7 +23,7 @@ sudo -u $real_user git clone https://github.com/easymotion/vim-easymotion
 
 cd /home/$real_user/
 
-sudo -u $real_user git clone --recursive https://github.com/sorin-ionescu/prezto.git /home/$real_user
+sudo -u $real_user git clone --recursive https://github.com/sorin-ionescu/prezto.git
 
 for file in dots; do
   ln -sf /home/$real_user/dotfiles/dots/$file /home/$real_user/."$file"
