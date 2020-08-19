@@ -21,9 +21,9 @@ cd /home/$SUDO_USER
 
 git clone --recursive https://github.com/sorin-ionescu/prezto.git
 
-DOTPATH=/home/$SUDO_USER/dotfiles/dots/*
-for dotfile in $DOTPATH; do
-  ln -sf /home/$SUDO_USER/dotfiles/dots/$dotfile /home/$SUDO_USER/".$dotfile"
+DOTNAME=$(ls /home/$SUDO_USER/dotfile/dots)
+for dotfile in $DOTNAME; do
+  ln -sf /home/$SUDO_USER/dotfiles/dots/$dotfile /home/$SUDO_USER/."$dotfile"
 done
 
 apt -y install vim tmux zsh
