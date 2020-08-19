@@ -3,7 +3,6 @@
 real_user=$SUDO_USER
 
 apt -y full-upgrade
-apt -y install vim tmux zsh
 
 # Copied from https://missing.csail.mit.edu/2020/editors/
 # "Many programs use the GNU Readline library for their command-line interface."
@@ -28,5 +27,9 @@ sudo -u $real_user git clone --recursive https://github.com/sorin-ionescu/prezto
 for file in dots; do
   ln -sf /home/$real_user/dotfiles/dots/$file /home/$real_user/."$file"
 done
+
+apt -y install vim tmux zsh
+
+sudo -u $real_user chsh -s $(which zsh)
 
 sudo -u $real_user zsh
