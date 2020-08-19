@@ -12,7 +12,7 @@ echo "set editing-mode vi" >> ~/.inputrc
 
 # Add some basic Vim plugins, recommended by the MIT missing semester class
 mkdir -p ~/.vim/pack/vendor/start
-sudo -u $real_user cd ~/.vim/pack/vendor/start
+cd  /home/$real_user/.vim/pack/vendor/start
 sudo -u $real_user git clone https://github.com/ctrlpvim/ctrlp.vim
 sudo -u $real_user git clone https://github.com/mileszs/ack.vim
 sudo -u $real_user git clone https://github.com/scrooloose/nerdtree
