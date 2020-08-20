@@ -38,7 +38,15 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'prompt'
+  'syntax-highlighting' \
+  'prompt' \
+  'git' \
+  'command-not-found' \
+  'history-substring-search' \
+  'autosuggestions' \
+  'tmux' \
+  'ssh'
+  
 
 #
 # Autosuggestions
