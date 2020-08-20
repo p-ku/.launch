@@ -13,8 +13,7 @@ cd /home/$SUDO_USER/.vim/pack/vendor/start
 
 git clone https://github.com/ctrlpvim/ctrlp.vim.git
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-:helptags ~/.vim/bundle/ctrlp.vim/doc
-
+vim -u NONE -c "helptags ctrlp.vim/doc" -c q
 git clone https://github.com/mileszs/ack.vim.git
 vim -u NONE -c "helptags ack.vim/doc" -c q
 git clone https://github.com/scrooloose/nerdtree.git
