@@ -12,7 +12,7 @@ git submodule update --init --recursive
 
 DOTNAME=$(ls /home/$SUDO_USER/.launch/dots)
 for dotfile in $DOTNAME; do
-  ln -sf /home/$SUDO_USER/.launch/dots/$dotfile /home/$SUDO_USER/."$dotfile"
+  ln -sfn /home/$SUDO_USER/.launch/dots/$dotfile /home/$SUDO_USER/."$dotfile"
 done
 
 cd /home/$SUDO_USER
