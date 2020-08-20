@@ -2,7 +2,7 @@
 
 Various configs, scripts, dotfiles, and whatnot, etc.
 
-## How I use it
+## How I prepare a new workstation:
 Install git:
 ```bash
 sudo apt -y install git
@@ -14,7 +14,7 @@ git clone --recursive https://github.com/p-ku/dotfiles.git
 ```
 Run the initiation script:
 ```bash
-sudo bash dotfiles/init.sh
+sudo bash .launch/init.sh
 ```
 Change default shell to zsh:
 ```bash
@@ -26,6 +26,25 @@ All together now:
 sudo apt install -y git; \
 cd ~; \
 git clone --recursive https://github.com/p-ku/dotfiles.git; \
-sudo bash dotfiles/init.sh; \
+sudo bash .launch/init.sh; \
 chsh -s $(which zsh)
+```
+## How I update:
+```bash
+cd ~/.launch
+```
+Update this repository:
+```bash
+sudo git pull
+```
+Run the update script:
+```bash
+sudo bash update.sh
+```
+All together now:
+```bash
+cd ~/.launch; \
+sudo git pull; \
+sudo bash update.sh; \
+cd ~
 ```
