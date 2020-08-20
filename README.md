@@ -1,4 +1,4 @@
-# dotfiles
+# .launch
 
 Various configs, scripts, dotfiles, and whatnot, etc.
 
