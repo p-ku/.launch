@@ -44,7 +44,7 @@ sudo bash update.sh
 All together now:
 ```bash
 cd ~/.launch; \
-sudo git pull; \
+git pull; \
 sudo bash update.sh; \
 cd ~
 ```
