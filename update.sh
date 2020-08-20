@@ -1,5 +1,5 @@
 #!/bin/bash
-apt -y full-upgrade
+apt -y update; apt -y upgrade
 
 cd /home/$SUDO_USER/.vim/pack/vendor/start
 
