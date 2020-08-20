@@ -26,4 +26,4 @@ for dotfile in $DOTNAME; do
   ln -sf /home/$SUDO_USER/.launch/dots/$dotfile /home/$SUDO_USER/."$dotfile"
 done
 
-apt -y install vim tmux zsh
+apt -y install vim tmux zsh ack-grep
