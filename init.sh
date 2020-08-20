@@ -11,10 +11,10 @@ mkdir -p /home/$SUDO_USER/.vim/pack/vendor/start
 
 cd /home/$SUDO_USER/.vim/pack/vendor/start
 
-git clone https://github.com/ctrlpvim/ctrlp.vim
-git clone https://github.com/mileszs/ack.vim
-git clone https://github.com/scrooloose/nerdtree
-git clone https://github.com/easymotion/vim-easymotion
+git clone https://github.com/ctrlpvim/ctrlp.vim.git
+git clone https://github.com/mileszs/ack.vim.git
+git clone https://github.com/scrooloose/nerdtree.git
+git clone https://github.com/easymotion/vim-easymotion.git
 # With this setting, for example, the Python REPL will support Vim bindings.
 
 cd /home/$SUDO_USER
