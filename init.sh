@@ -12,9 +12,17 @@ mkdir -p /home/$SUDO_USER/.vim/pack/vendor/start
 cd /home/$SUDO_USER/.vim/pack/vendor/start
 
 git clone https://github.com/ctrlpvim/ctrlp.vim.git
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+:helptags ~/.vim/bundle/ctrlp.vim/doc
+
 git clone https://github.com/mileszs/ack.vim.git
+vim -u NONE -c "helptags ack.vim/doc" -c q
 git clone https://github.com/scrooloose/nerdtree.git
+vim -u NONE -c "helptags fugitive/doc" -c q
 git clone https://github.com/easymotion/vim-easymotion.git
+vim -u NONE -c "helptags vim-easymotion/doc" -c q
+git clone https://tpope.io/vim/fugitive.git
+vim -u NONE -c "helptags fugitive/doc" -c q
 # With this setting, for example, the Python REPL will support Vim bindings.
 
 cd /home/$SUDO_USER
