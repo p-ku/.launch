@@ -94,3 +94,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " for ctrlp.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" Auto-wrap git commit messages
+au FileType gitcommit setlocal tw=72
