@@ -97,3 +97,6 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Auto-wrap git commit messages
 au FileType gitcommit setlocal tw=72
+
+" Set indent size for .scm (Scheme) files
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
