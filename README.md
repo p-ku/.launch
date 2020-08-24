@@ -20,7 +20,7 @@ Change default shell to zsh:
 ```bash
 chsh -s $(which zsh)
 ```
-A password is necessary here. Log out for changes to take effect.
+Log out for changes to take effect.
 All together now:
 ```bash
 sudo apt install -y git; \
