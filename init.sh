@@ -11,6 +11,11 @@ mkdir -p /home/"$SUDO_USER"/.vim/pack/vendor/start
 
 cd /home/"$SUDO_USER"/.vim/pack/vendor/start || exit
 
+DOTNAME=$(ls /home/"$SUDO_USER"/.launch/dots)
+for dotfile in $DOTNAME; do
+  ln -s /home/"$SUDO_USER"/.launch/dots/"$dotfile" /home/"$SUDO_USER"/."$dotfile"
+done 
+
 git clone https://github.com/ctrlpvim/ctrlp.vim.git
 vim -u NONE -c "helptags ctrlp.vim/doc" -c q
 git clone https://github.com/mileszs/ack.vim.git
