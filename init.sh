@@ -24,7 +24,7 @@ git clone https://github.com/scrooloose/nerdtree.git
 vim -u NONE -c "helptags fugitive/doc" -c q
 git clone https://github.com/easymotion/vim-easymotion.git
 vim -u NONE -c "helptags vim-easymotion/doc" -c q
-git clone https://github.com/tpope/fugitive.git 
+git clone https://github.com/tpope/vim-fugitive.git 
 vim -u NONE -c "helptags fugitive/doc" -c q
 
 cd /home/"$SUDO_USER" || exit
