@@ -30,21 +30,7 @@ sudo bash .launch/init.sh; \
 chsh -s $(which zsh)
 ```
 ## How I update:
-```bash
-cd ~/.launch
-```
-Update this repository:
-```bash
-sudo git pull
-```
 Run the update script:
 ```bash
-sudo bash update.sh
-```
-All together now:
-```bash
-cd ~/.launch; \
-git pull; \
-sudo bash update.sh; \
-cd ~
+sudo bash ~/.launch/update.sh
 ```
