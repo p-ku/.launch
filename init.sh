@@ -11,8 +11,7 @@ mkdir -p /home/"$SUDO_USER"/.vim/pack/vendor/start
 
 cd /home/"$SUDO_USER"/.vim/pack/vendor/start || exit
 
-DOTNAME=$(ls /home/"$SUDO_USER"/.launch/dots)
-for dotfile in $DOTNAME; do
+for dotfile in /home/"$SUDO_USER"/.launch/dots/*; do
   ln -s /home/"$SUDO_USER"/.launch/dots/"$dotfile" /home/"$SUDO_USER"/."$dotfile"
 done 
 
