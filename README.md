@@ -25,7 +25,7 @@ All together now:
 ```bash
 sudo apt install -y git; \
 cd ~; \
-git clone --recursive https://github.com/p-ku/dotfiles.git; \
+git clone https://github.com/p-ku/dotfiles.git; \
 sudo bash .launch/init.sh; \
 chsh -s $(which zsh)
 ```
