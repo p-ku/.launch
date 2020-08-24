@@ -10,13 +10,7 @@ for repos in $REPNAME; do
 done
 
 cd /home/"$SUDO_USER"/.zprezto || exit
-
 git pull
 git submodule update --init --recursive
-
-DOTNAME=$(ls /home/"$SUDO_USER"/.launch/dots)
-for dotfile in $DOTNAME; do
-  ln -sfn /home/"$SUDO_USER"/.launch/dots/"$dotfile" /home/"$SUDO_USER"/."$dotfile"
-done
 
 cd /home/"$SUDO_USER" || exit
